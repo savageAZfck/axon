@@ -3,7 +3,7 @@
 version = 3
 
 [[package]]
-name = "axon"
+name = "axon-reflex"
 version = "0.1.0"
 dependencies = [
  "hex",

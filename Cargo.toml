@@ -1,5 +1,5 @@
 [package]
-name = "axon"
+name = "axon-reflex"
 version = "0.1.0"
 edition = "2021"
 rust-version = "1.75"
@@ -11,6 +11,12 @@ description = "Audited reflex arc for autonomous agents: hard-bounded, sub-delib
 keywords = ["reflex", "safety", "watchdog", "sovereignty", "agents"]
 categories = ["cryptography"]
 readme = "README.md"
+
+[lib]
+# The crates.io package is `axon-reflex` (the bare `axon` name
+# is taken); the library keeps the short name so `use axon::…`
+# stays stable.
+name = "axon"
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
