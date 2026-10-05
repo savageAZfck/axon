@@ -37,8 +37,14 @@ fn main() {
     .unwrap();
 
     let events = vec![
-        SenseEvent::new("tool_dispatch", json!({"tool": "read_file", "dest": "local"})),
-        SenseEvent::new("tool_dispatch", json!({"tool": "send_file", "dest": "external"})),
+        SenseEvent::new(
+            "tool_dispatch",
+            json!({"tool": "read_file", "dest": "local"}),
+        ),
+        SenseEvent::new(
+            "tool_dispatch",
+            json!({"tool": "send_file", "dest": "external"}),
+        ),
         SenseEvent::new("sensor", json!({"temp_c": 98.5})),
         SenseEvent::new("tool_dispatch", json!({"tool": "anything"})),
     ];
